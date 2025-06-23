@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 447799244f9805c48be5ef9763f9313c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniHalberdMan_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 161
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef89adacc6f204b468c89c5abd4af7e5
+      internalID: -1250391953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 161
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce0eed1fc34eb34b82c6bff0caa3f3c
+      internalID: 1503841889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 161
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f678a24b52c2d4f48998b559dabd2cb0
+      internalID: -1889823885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 161
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebfb90923fe2a24a99fa9502838fff7
+      internalID: 1588153460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 129
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d745e2633611c04c9dc310e67c2b7e8
+      internalID: 837019367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 129
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5137ffaae17ee40a5561f2bbfaa24c
+      internalID: -187512197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 129
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbffaf84a217ef4fa444a75a9313996
+      internalID: 1172447839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 129
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23516360dbca64a4c9ca6855368eae60
+      internalID: 793971720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 129
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2acc587a594d44882690fd173722a1
+      internalID: -1594296411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 129
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3765818760cee146aa36f057cf41e2c
+      internalID: -218974452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 99
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f9f53f0b91d6e4ca55446d763e9714
+      internalID: -1624331242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 99
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b58886fb21e494c812da4bd913134d
+      internalID: -551552210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_12
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 99
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f08bdecf737dd4eba5eaba9000fa59
+      internalID: -1417422426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_13
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 65
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0.4999999, y: 0.3550401}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13d0f43fbb21e8449f115ff55f49032
+      internalID: 695127186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 65
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0.51449585, y: 0.31155223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df571484bbdcef24da44e98551e489b8
+      internalID: -1719233154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 64
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0.388864, y: 0.31638372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8579f014384ba44f9a79e6a0ab1938b
+      internalID: 556916494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_16
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 65
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0.3598723, y: 0.30672038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1ac33ba23822247a1b39e967eab225
+      internalID: -1797269470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_17
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 65
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0.32604772, y: 0.30672005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc25630eaff8a54ca2d00c063c2c5f6
+      internalID: -1130332271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_18
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 65
+        width: 20
+        height: 22
+      alignment: 9
+      pivot: {x: 0.3777504, y: 0.33088025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62133982ea095654e956dac0d30b41e5
+      internalID: 1696360315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_19
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 33
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb042b99b7150e84d8720a093fe0a079
+      internalID: -893051246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_20
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 33
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c15e09c1a8de3459a42f5e83964420
+      internalID: -1749779979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 33
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c32c1f0912f3148a615fd6bc393f3a
+      internalID: -2023822973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd076d6920408684f9f0deb67185aae5
+      internalID: -1627550046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_23
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709145ce3b8d7f24687cb488d7211980
+      internalID: -551035893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_24
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2bdd62d96f55f488166f461841186b
+      internalID: 458168757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_25
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7a3423daebdce49b78f0c5938ff958
+      internalID: 1613400915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHalberdMan_26
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79da6647f692154dbbcb64daac167b2
+      internalID: 597083333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MiniHalberdMan_0: -1250391953
+      MiniHalberdMan_1: 1503841889
+      MiniHalberdMan_10: -1624331242
+      MiniHalberdMan_11: -551552210
+      MiniHalberdMan_12: -1417422426
+      MiniHalberdMan_13: 695127186
+      MiniHalberdMan_14: -1719233154
+      MiniHalberdMan_15: 556916494
+      MiniHalberdMan_16: -1797269470
+      MiniHalberdMan_17: -1130332271
+      MiniHalberdMan_18: 1696360315
+      MiniHalberdMan_19: -893051246
+      MiniHalberdMan_2: -1889823885
+      MiniHalberdMan_20: -1749779979
+      MiniHalberdMan_21: -2023822973
+      MiniHalberdMan_22: -1627550046
+      MiniHalberdMan_23: -551035893
+      MiniHalberdMan_24: 458168757
+      MiniHalberdMan_25: 1613400915
+      MiniHalberdMan_26: 597083333
+      MiniHalberdMan_3: 1588153460
+      MiniHalberdMan_4: 837019367
+      MiniHalberdMan_5: -187512197
+      MiniHalberdMan_6: 1172447839
+      MiniHalberdMan_7: 793971720
+      MiniHalberdMan_8: -1594296411
+      MiniHalberdMan_9: -218974452
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

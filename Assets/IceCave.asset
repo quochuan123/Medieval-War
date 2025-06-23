@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296de896492dc2541a00bcf34374c8b6, type: 3}
+  m_Name: IceCave
+  m_EditorClassIdentifier: 
+  allNodes:
+  - nodeName: IceCave
+    nodeID: 0
+    ObjectID: 0
+    worldPosition: {x: -1.88, y: -6.29, z: 0.2}
+    controlledByPlayer: 1
+    occupyingArmyID: -1
+    connectedNodeIDs: 01000000
+  - nodeName: IceCave
+    nodeID: 1
+    ObjectID: 0
+    worldPosition: {x: 1.62, y: -2.41, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 2
+    connectedNodeIDs: 0000000002000000
+  - nodeName: IceCave
+    nodeID: 2
+    ObjectID: 0
+    worldPosition: {x: -2.64, y: 2.52, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 1
+    connectedNodeIDs: 0300000001000000
+  - nodeName: IceCave_Last
+    nodeID: 3
+    ObjectID: 0
+    worldPosition: {x: 2.84, y: 8.55, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 0
+    connectedNodeIDs: 02000000
+  allArmies:
+  - name: 
+    armyID: 0
+    isPlayer: 0
+    currentNodeID: 3
+    lvl: 1
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 1
+    isPlayer: 0
+    currentNodeID: 2
+    lvl: 1
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 2
+    isPlayer: 0
+    currentNodeID: 1
+    lvl: 1
+    isDead: 0
+    exhaustedLvl: 0

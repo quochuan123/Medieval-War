@@ -1,0 +1,1067 @@
+fileFormatVersion: 2
+guid: 4c26e6492a84be74f8c6d9d7bd50c679
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Rocks_Frame_0
+    originalName: 
+    pivot: {x: 0.059561126, y: 0.81535274}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 638
+      height: 482
+    spriteID: 7f1566bc91f172d49b190e20ff12029c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Rocks_Frame_1
+    originalName: 
+    pivot: {x: 0.053627763, y: 0.81535274}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 648
+      y: 984
+      width: 634
+      height: 482
+    spriteID: 448fa261f1a7fb247b12b58cc3c34805
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 648, y: 984}
+  - name: Rocks_Frame_2
+    originalName: 
+    pivot: {x: 0.05660377, y: 0.81535274}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 984
+      width: 636
+      height: 482
+    spriteID: ee0b263ca64ee444bb85bae6f043e836
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 984}
+  - name: Rocks_Frame_3
+    originalName: 
+    pivot: {x: 0.058084775, y: 0.81535274}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 650
+      y: 494
+      width: 637
+      height: 482
+    spriteID: dfec4c6b40e1a8c4daa1d8dbaaee2204
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 650, y: 494}
+  - name: Rocks_Frame_4
+    originalName: 
+    pivot: {x: 0.058084775, y: 0.81535274}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1295
+      y: 494
+      width: 637
+      height: 482
+    spriteID: 3f81d65b927a1454c9587d87ae8d1909
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1295, y: 494}
+  - name: Rocks_Frame_5
+    originalName: 
+    pivot: {x: 0.059561126, y: 0.81535274}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 650
+      y: 4
+      width: 638
+      height: 482
+    spriteID: b163890b994035a4c97d45147f10d583
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 650, y: 4}
+  - name: Rocks_Frame_6
+    originalName: 
+    pivot: {x: 0.059561126, y: 0.81535274}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1296
+      y: 4
+      width: 638
+      height: 482
+    spriteID: 061b701f41f24b349a490bd40a20050b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1296, y: 4}
+  - name: Rocks_Frame_7
+    originalName: 
+    pivot: {x: 0.059561126, y: 0.81535274}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 494
+      width: 638
+      height: 482
+    spriteID: 3ac82c42aafe8a3428972e77ddaa803c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 494}
+  - name: Rocks_Frame_8
+    originalName: 
+    pivot: {x: 0.5121951, y: -1.4193548}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1579
+      y: 984
+      width: 41
+      height: 31
+    spriteID: 959c09eac3a44fa4da542a4cc8de9655
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1579, y: 984}
+  - name: Rocks_Frame_9
+    originalName: 
+    pivot: {x: 0.53658533, y: -1.5000001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1628
+      y: 984
+      width: 41
+      height: 30
+    spriteID: c48c6d11ac3977641bc56a8508125727
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1628, y: 984}
+  - name: Rocks_Frame_10
+    originalName: 
+    pivot: {x: 0.54545456, y: -1.4193548}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1527
+      y: 984
+      width: 44
+      height: 31
+    spriteID: 7711660407b21984383c2fdf25ff3e1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1527, y: 984}
+  - name: Rocks_Frame_11
+    originalName: 
+    pivot: {x: 0.54347825, y: -1.34375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1940
+      y: 943
+      width: 46
+      height: 32
+    spriteID: cd0e2ad09c19dac45bc057a39a095778
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1940, y: 943}
+  - name: Rocks_Frame_12
+    originalName: 
+    pivot: {x: 0.5319149, y: -1.2058823}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1366
+      y: 984
+      width: 47
+      height: 34
+    spriteID: e01183adbba3430448f30c46d54fa2d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1366, y: 984}
+  - name: Rocks_Frame_13
+    originalName: 
+    pivot: {x: 0.5217391, y: -1.2058823}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1421
+      y: 984
+      width: 46
+      height: 34
+    spriteID: fb9184949d90a5542b8a8df07390da53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1421, y: 984}
+  - name: Rocks_Frame_14
+    originalName: 
+    pivot: {x: 0.5227273, y: -1.2058823}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1475
+      y: 984
+      width: 44
+      height: 34
+    spriteID: 431e64e08ca96424f87bc67132e9d970
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1475, y: 984}
+  - name: Rocks_Frame_15
+    originalName: 
+    pivot: {x: 0.53488374, y: -1.2727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1994
+      y: 943
+      width: 43
+      height: 33
+    spriteID: 220526c5c2a6c0a4e8df27e5cd00847d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1994, y: 943}
+  - name: Rocks_Frame_16
+    originalName: 
+    pivot: {x: 0.46153846, y: -0.78846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1290
+      y: 1043
+      width: 65
+      height: 52
+    spriteID: 83928c01673f5f7428162ce4b6c87140
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1290, y: 1043}
+  - name: Rocks_Frame_17
+    originalName: 
+    pivot: {x: 0.45588234, y: -0.8235294}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1290
+      y: 984
+      width: 68
+      height: 51
+    spriteID: 6eff4a7c8205ac64a84051075fe03e8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1290, y: 984}
+  - name: Rocks_Frame_18
+    originalName: 
+    pivot: {x: 0.45070422, y: -0.754717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1940
+      y: 821
+      width: 71
+      height: 53
+    spriteID: bead2787af91a0f48bbb5e168a24f709
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1940, y: 821}
+  - name: Rocks_Frame_19
+    originalName: 
+    pivot: {x: 0.46575344, y: -0.6909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1940
+      y: 696
+      width: 73
+      height: 55
+    spriteID: 74a47c7f79b8e6c45878691958f8c4da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1940, y: 696}
+  - name: Rocks_Frame_20
+    originalName: 
+    pivot: {x: 0.46666667, y: -0.6607143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1940
+      y: 632
+      width: 75
+      height: 56
+    spriteID: db0fef21a4ee3af44822646a3aceab59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1940, y: 632}
+  - name: Rocks_Frame_21
+    originalName: 
+    pivot: {x: 0.46666667, y: -0.6909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1942
+      y: 431
+      width: 75
+      height: 55
+    spriteID: 7d625bc191162a34b9f559272b42243f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1942, y: 431}
+  - name: Rocks_Frame_22
+    originalName: 
+    pivot: {x: 0.47945204, y: -0.7222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1940
+      y: 759
+      width: 73
+      height: 54
+    spriteID: 7074f68add4b23443886514a77fcfba3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1940, y: 759}
+  - name: Rocks_Frame_23
+    originalName: 
+    pivot: {x: 0.47887322, y: -0.754717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1940
+      y: 882
+      width: 71
+      height: 53
+    spriteID: e46dc3946567ccc43826daca665b3e79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1940, y: 882}
+  - name: Rocks_Frame_24
+    originalName: 
+    pivot: {x: 0.4819277, y: -0.516129}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1940
+      y: 562
+      width: 83
+      height: 62
+    spriteID: d5d81daffb5220c4e9fc8044255de898
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1940, y: 562}
+  - name: Rocks_Frame_25
+    originalName: 
+    pivot: {x: 0.47674417, y: -0.5666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1942
+      y: 363
+      width: 86
+      height: 60
+    spriteID: c95e4313e79645c419797f448051d9f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1942, y: 363}
+  - name: Rocks_Frame_26
+    originalName: 
+    pivot: {x: 0.47674417, y: -0.5666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1940
+      y: 494
+      width: 86
+      height: 60
+    spriteID: 34618b666a7c403489c9d0bfb77ed59d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1940, y: 494}
+  - name: Rocks_Frame_27
+    originalName: 
+    pivot: {x: 0.4888889, y: -0.49206352}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1942
+      y: 221
+      width: 90
+      height: 63
+    spriteID: c67465ba882000843b374cea438a889a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1942, y: 221}
+  - name: Rocks_Frame_28
+    originalName: 
+    pivot: {x: 0.48351648, y: -0.44615385}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1942
+      y: 4
+      width: 91
+      height: 65
+    spriteID: 1c17f055531254d47a2fe19c12c7115c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1942, y: 4}
+  - name: Rocks_Frame_29
+    originalName: 
+    pivot: {x: 0.48351648, y: -0.46875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1942
+      y: 77
+      width: 91
+      height: 64
+    spriteID: d9caa42b4048b854faa9d6cd48f48068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1942, y: 77}
+  - name: Rocks_Frame_30
+    originalName: 
+    pivot: {x: 0.48351648, y: -0.46875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1942
+      y: 149
+      width: 91
+      height: 64
+    spriteID: 7ef6ef21319d1434abb9f33144122c46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1942, y: 149}
+  - name: Rocks_Frame_31
+    originalName: 
+    pivot: {x: 0.4888889, y: -0.49206352}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1942
+      y: 292
+      width: 90
+      height: 63
+    spriteID: 9fd5ebb7d0582394796e705b60443751
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1942, y: 292}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1883100188
+    name: Rocks
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Rocks_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: -393
+        width: 638
+        height: 482
+      spriteId: 7f1566bc91f172d49b190e20ff12029c
+    - name: Rocks_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 30
+        y: -393
+        width: 634
+        height: 482
+      spriteId: 448fa261f1a7fb247b12b58cc3c34805
+    - name: Rocks_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: -393
+        width: 636
+        height: 482
+      spriteId: ee0b263ca64ee444bb85bae6f043e836
+    - name: Rocks_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 27
+        y: -393
+        width: 637
+        height: 482
+      spriteId: dfec4c6b40e1a8c4daa1d8dbaaee2204
+    - name: Rocks_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 27
+        y: -393
+        width: 637
+        height: 482
+      spriteId: 3f81d65b927a1454c9587d87ae8d1909
+    - name: Rocks_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: -393
+        width: 638
+        height: 482
+      spriteId: b163890b994035a4c97d45147f10d583
+    - name: Rocks_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: -393
+        width: 638
+        height: 482
+      spriteId: 061b701f41f24b349a490bd40a20050b
+    - name: Rocks_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: -393
+        width: 638
+        height: 482
+      spriteId: 3ac82c42aafe8a3428972e77ddaa803c
+    - name: Rocks_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 44
+        width: 41
+        height: 31
+      spriteId: 959c09eac3a44fa4da542a4cc8de9655
+    - name: Rocks_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 45
+        width: 41
+        height: 30
+      spriteId: c48c6d11ac3977641bc56a8508125727
+    - name: Rocks_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 44
+        width: 44
+        height: 31
+      spriteId: 7711660407b21984383c2fdf25ff3e1e
+    - name: Rocks_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 43
+        width: 46
+        height: 32
+      spriteId: cd0e2ad09c19dac45bc057a39a095778
+    - name: Rocks_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 41
+        width: 47
+        height: 34
+      spriteId: e01183adbba3430448f30c46d54fa2d0
+    - name: Rocks_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 41
+        width: 46
+        height: 34
+      spriteId: fb9184949d90a5542b8a8df07390da53
+    - name: Rocks_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 41
+        width: 44
+        height: 34
+      spriteId: 431e64e08ca96424f87bc67132e9d970
+    - name: Rocks_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 42
+        width: 43
+        height: 33
+      spriteId: 220526c5c2a6c0a4e8df27e5cd00847d
+    - name: Rocks_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 34
+        y: 41
+        width: 65
+        height: 52
+      spriteId: 83928c01673f5f7428162ce4b6c87140
+    - name: Rocks_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 42
+        width: 68
+        height: 51
+      spriteId: 6eff4a7c8205ac64a84051075fe03e8f
+    - name: Rocks_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 40
+        width: 71
+        height: 53
+      spriteId: bead2787af91a0f48bbb5e168a24f709
+    - name: Rocks_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 30
+        y: 38
+        width: 73
+        height: 55
+      spriteId: 74a47c7f79b8e6c45878691958f8c4da
+    - name: Rocks_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 29
+        y: 37
+        width: 75
+        height: 56
+      spriteId: db0fef21a4ee3af44822646a3aceab59
+    - name: Rocks_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 29
+        y: 38
+        width: 75
+        height: 55
+      spriteId: 7d625bc191162a34b9f559272b42243f
+    - name: Rocks_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 29
+        y: 39
+        width: 73
+        height: 54
+      spriteId: 7074f68add4b23443886514a77fcfba3
+    - name: Rocks_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 30
+        y: 40
+        width: 71
+        height: 53
+      spriteId: e46dc3946567ccc43826daca665b3e79
+    - name: Rocks_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 32
+        width: 83
+        height: 62
+      spriteId: d5d81daffb5220c4e9fc8044255de898
+    - name: Rocks_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 34
+        width: 86
+        height: 60
+      spriteId: c95e4313e79645c419797f448051d9f7
+    - name: Rocks_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 34
+        width: 86
+        height: 60
+      spriteId: 34618b666a7c403489c9d0bfb77ed59d
+    - name: Rocks_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 31
+        width: 90
+        height: 63
+      spriteId: c67465ba882000843b374cea438a889a
+    - name: Rocks_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 29
+        width: 91
+        height: 65
+      spriteId: 1c17f055531254d47a2fe19c12c7115c
+    - name: Rocks_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 30
+        width: 91
+        height: 64
+      spriteId: d9caa42b4048b854faa9d6cd48f48068
+    - name: Rocks_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 30
+        width: 91
+        height: 64
+      spriteId: 7ef6ef21319d1434abb9f33144122c46
+    - name: Rocks_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 31
+        width: 90
+        height: 63
+      spriteId: 9fd5ebb7d0582394796e705b60443751
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 128, y: 128}

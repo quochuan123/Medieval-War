@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - enemy
+  - archer
+  - knight
+  - shieldman
+  - halbert
+  - crossbow
+  - mage
+  - archmage
+  - range
+  - vanguard
+  - rearguard
+  - leftwing
+  - rightwing
+  - center
+  - remove
+  - miner
+  - nun
+  - elf
+  - merchant
+  - gravekeeper
+  - soldier
+  - hunter
+  - none
+  - gold
+  - unit_amount
+  - volunteer
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Enemy
+  - Player
+  - Dead
+  - None
+  - Wall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

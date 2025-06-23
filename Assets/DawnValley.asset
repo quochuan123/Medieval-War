@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296de896492dc2541a00bcf34374c8b6, type: 3}
+  m_Name: DawnValley
+  m_EditorClassIdentifier: 
+  allNodes:
+  - nodeName: DawnValley_0
+    nodeID: 0
+    ObjectID: 0
+    worldPosition: {x: 5.01, y: -7.18, z: 0.2}
+    controlledByPlayer: 1
+    occupyingArmyID: -1
+    connectedNodeIDs: 0100000003000000
+  - nodeName: DawnValley_0
+    nodeID: 1
+    ObjectID: 0
+    worldPosition: {x: -4.97, y: -6.96, z: 0.2}
+    controlledByPlayer: 1
+    occupyingArmyID: -1
+    connectedNodeIDs: 0000000002000000
+  - nodeName: DawnValley_0
+    nodeID: 2
+    ObjectID: 0
+    worldPosition: {x: -4.83, y: 0.71, z: 0}
+    controlledByPlayer: 0
+    occupyingArmyID: 0
+    connectedNodeIDs: 010000000300000006000000
+  - nodeName: DawnValley_0
+    nodeID: 3
+    ObjectID: 0
+    worldPosition: {x: 5.21, y: 0.97, z: 0}
+    controlledByPlayer: 0
+    occupyingArmyID: 1
+    connectedNodeIDs: 020000000400000005000000
+  - nodeName: DawnValley_Hard
+    nodeID: 4
+    ObjectID: 0
+    worldPosition: {x: 12.31, y: 6.69, z: 0}
+    controlledByPlayer: 0
+    occupyingArmyID: 2
+    connectedNodeIDs: 030000000700000004000000
+  - nodeName: DawnValley_Boss
+    nodeID: 5
+    ObjectID: 0
+    worldPosition: {x: 0, y: 7.62, z: 0}
+    controlledByPlayer: 0
+    occupyingArmyID: 3
+    connectedNodeIDs: 020000000300000007000000
+  - nodeName: DawnValley_Hard
+    nodeID: 6
+    ObjectID: 0
+    worldPosition: {x: -11.7, y: 6.65, z: 0}
+    controlledByPlayer: 0
+    occupyingArmyID: 4
+    connectedNodeIDs: 0200000007000000
+  - nodeName: DawnValley_Veryhard
+    nodeID: 7
+    ObjectID: 0
+    worldPosition: {x: -0.08, y: 13.51, z: 0}
+    controlledByPlayer: 0
+    occupyingArmyID: 5
+    connectedNodeIDs: 04000000060000000800000005000000
+  - nodeName: DawnValley_Epic
+    nodeID: 8
+    ObjectID: 0
+    worldPosition: {x: 6.62, y: 18.73, z: 0}
+    controlledByPlayer: 0
+    occupyingArmyID: 6
+    connectedNodeIDs: 07000000
+  allArmies:
+  - name: 
+    armyID: 0
+    isPlayer: 0
+    currentNodeID: 2
+    lvl: 4
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 1
+    isPlayer: 0
+    currentNodeID: 3
+    lvl: 4
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 2
+    isPlayer: 0
+    currentNodeID: 4
+    lvl: 6
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 3
+    isPlayer: 0
+    currentNodeID: 5
+    lvl: 9
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 4
+    isPlayer: 0
+    currentNodeID: 6
+    lvl: 6
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 5
+    isPlayer: 0
+    currentNodeID: 7
+    lvl: 8
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 6
+    isPlayer: 0
+    currentNodeID: 8
+    lvl: 99
+    isDead: 0
+    exhaustedLvl: 0

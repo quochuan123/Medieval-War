@@ -1,0 +1,296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296de896492dc2541a00bcf34374c8b6, type: 3}
+  m_Name: DeadKingdom
+  m_EditorClassIdentifier: 
+  allNodes:
+  - nodeName: Deadkingdom_0
+    nodeID: 0
+    ObjectID: 0
+    worldPosition: {x: -8.28, y: -5.99, z: 0.2}
+    controlledByPlayer: 1
+    occupyingArmyID: -1
+    connectedNodeIDs: 07000000
+  - nodeName: Deadkingdom_0
+    nodeID: 1
+    ObjectID: 0
+    worldPosition: {x: -1.88, y: -6.29, z: 0.2}
+    controlledByPlayer: 1
+    occupyingArmyID: -1
+    connectedNodeIDs: 06000000
+  - nodeName: Deadkingdom_0
+    nodeID: 2
+    ObjectID: 0
+    worldPosition: {x: 4.79, y: -6.56, z: 0.2}
+    controlledByPlayer: 1
+    occupyingArmyID: -1
+    connectedNodeIDs: 05000000
+  - nodeName: Deadkingdom_0
+    nodeID: 3
+    ObjectID: 0
+    worldPosition: {x: 11.69, y: -6.21, z: 0.2}
+    controlledByPlayer: 1
+    occupyingArmyID: -1
+    connectedNodeIDs: 04000000
+  - nodeName: Deadkingdom_0
+    nodeID: 4
+    ObjectID: 0
+    worldPosition: {x: 12.28, y: -2.03, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 17
+    connectedNodeIDs: 030000000b000000
+  - nodeName: Deadkingdom_0
+    nodeID: 5
+    ObjectID: 0
+    worldPosition: {x: 4.53, y: -1.76, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 16
+    connectedNodeIDs: 020000000a000000
+  - nodeName: Deadkingdom_0
+    nodeID: 6
+    ObjectID: 0
+    worldPosition: {x: -1.89, y: -1.38, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 15
+    connectedNodeIDs: 0100000009000000
+  - nodeName: Deadkingdom_0
+    nodeID: 7
+    ObjectID: 0
+    worldPosition: {x: -8.12, y: -1.88, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 14
+    connectedNodeIDs: 0000000008000000
+  - nodeName: Deadkingdom_0
+    nodeID: 8
+    ObjectID: 0
+    worldPosition: {x: -7.88, y: 1.73, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 13
+    connectedNodeIDs: 070000000f000000
+  - nodeName: Deadkingdom_Hard
+    nodeID: 9
+    ObjectID: 0
+    worldPosition: {x: -1.84, y: 2.26, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 12
+    connectedNodeIDs: 060000000e000000
+  - nodeName: Deadkingdom_Hard
+    nodeID: 10
+    ObjectID: 0
+    worldPosition: {x: 4.66, y: 2.02, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 11
+    connectedNodeIDs: 050000000d000000
+  - nodeName: Deadkingdom_Hard
+    nodeID: 11
+    ObjectID: 0
+    worldPosition: {x: 11.98, y: 2.23, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 10
+    connectedNodeIDs: 040000000c000000
+  - nodeName: Deadkingdom_Hard
+    nodeID: 12
+    ObjectID: 0
+    worldPosition: {x: 12.77, y: 7.5, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 9
+    connectedNodeIDs: 0b00000012000000
+  - nodeName: Deadkingdom_Veryhard
+    nodeID: 13
+    ObjectID: 0
+    worldPosition: {x: 4.75, y: 6.99, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 8
+    connectedNodeIDs: 0a00000011000000
+  - nodeName: Deadkingdom_Veryhard
+    nodeID: 14
+    ObjectID: 0
+    worldPosition: {x: -2.01, y: 6.78, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 7
+    connectedNodeIDs: 0900000011000000
+  - nodeName: Deadkingdom_Hard
+    nodeID: 15
+    ObjectID: 0
+    worldPosition: {x: -7.92, y: 5.83, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 6
+    connectedNodeIDs: 0800000010000000
+  - nodeName: Deadkingdom_Hard
+    nodeID: 16
+    ObjectID: 0
+    worldPosition: {x: -10.41, y: 12.31, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 5
+    connectedNodeIDs: 0f00000014000000
+  - nodeName: Deadkingdom_Boss
+    nodeID: 17
+    ObjectID: 0
+    worldPosition: {x: 1.47, y: 11.06, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 4
+    connectedNodeIDs: 0d0000000e0000001300000014000000
+  - nodeName: Deadkingdom_Hard
+    nodeID: 18
+    ObjectID: 0
+    worldPosition: {x: 12.85, y: 13.54, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 3
+    connectedNodeIDs: 0c00000013000000
+  - nodeName: Deadkingdom_Veryhard
+    nodeID: 19
+    ObjectID: 0
+    worldPosition: {x: 5.57, y: 16.12, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 2
+    connectedNodeIDs: 110000001200000015000000
+  - nodeName: Deadkingdom_Veryhard
+    nodeID: 20
+    ObjectID: 0
+    worldPosition: {x: -3.45, y: 15.83, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 1
+    connectedNodeIDs: 100000001100000015000000
+  - nodeName: Deadkingdom_Epic
+    nodeID: 21
+    ObjectID: 0
+    worldPosition: {x: 1.01, y: 19.14, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 0
+    connectedNodeIDs: 1300000014000000
+  allArmies:
+  - name: 
+    armyID: 0
+    isPlayer: 0
+    currentNodeID: 21
+    lvl: 99
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 1
+    isPlayer: 0
+    currentNodeID: 20
+    lvl: 22
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 2
+    isPlayer: 0
+    currentNodeID: 19
+    lvl: 21
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 3
+    isPlayer: 0
+    currentNodeID: 18
+    lvl: 18
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 4
+    isPlayer: 0
+    currentNodeID: 17
+    lvl: 23
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 5
+    isPlayer: 0
+    currentNodeID: 16
+    lvl: 18
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 6
+    isPlayer: 0
+    currentNodeID: 15
+    lvl: 17
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 7
+    isPlayer: 0
+    currentNodeID: 14
+    lvl: 21
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 8
+    isPlayer: 0
+    currentNodeID: 13
+    lvl: 22
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 9
+    isPlayer: 0
+    currentNodeID: 12
+    lvl: 18
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 10
+    isPlayer: 0
+    currentNodeID: 11
+    lvl: 18
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 11
+    isPlayer: 0
+    currentNodeID: 10
+    lvl: 18
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 12
+    isPlayer: 0
+    currentNodeID: 9
+    lvl: 18
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 13
+    isPlayer: 0
+    currentNodeID: 8
+    lvl: 15
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 14
+    isPlayer: 0
+    currentNodeID: 7
+    lvl: 15
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 15
+    isPlayer: 0
+    currentNodeID: 6
+    lvl: 16
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 16
+    isPlayer: 0
+    currentNodeID: 5
+    lvl: 15
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 17
+    isPlayer: 0
+    currentNodeID: 4
+    lvl: 15
+    isDead: 0
+    exhaustedLvl: 0

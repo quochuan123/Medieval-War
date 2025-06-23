@@ -1,0 +1,775 @@
+fileFormatVersion: 2
+guid: bc9b2e20361bd5d4b85564c8db93a8f4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 789
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdddc00fc796e74e8e55a59ead68baa
+      internalID: 1817035814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 789
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662c8ef6f2b43cb4191e72fa0d6ee257
+      internalID: 881505980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 790
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b125b1068395640ad58a815c72f9fb
+      internalID: -229330679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 788
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b134998e8d541604685d1f7500d3d538
+      internalID: -97420487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 788
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d817eb26cff75034b8573862480f97f5
+      internalID: -759185130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 635
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add746711b41d3e4c8d6bb64f9242cc1
+      internalID: -2124280624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 634
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17603680ac62de147bfae43d4f73634c
+      internalID: -507144328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 635
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1900fb39c8bb74345a05833b9046736d
+      internalID: 2135348945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 635
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccd4971702de52449997075ac97a339
+      internalID: 1805766098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 633
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e397a2334a36f8c48afd5667ca37db4a
+      internalID: 1387865638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 487
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023320a0fd10c4a4c8306ad6b2c767ec
+      internalID: -1675752744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 488
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c877adb84ebe7d540ae240443f81f62d
+      internalID: -1119664341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 488
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d30269db04c3848aaa2d6c792d13d4
+      internalID: -1069057195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 488
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ef5caaa0848fc43baf015d35ecd126
+      internalID: -223291038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 487
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706f88d9e0aa43f40967d4a91b708f6f
+      internalID: -397413636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 338
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77f365f3e6c6604c958aabb0f19ee7c
+      internalID: 613889411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 334
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4840f09269e44459ab2f0570307c83
+      internalID: -1356276975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 336
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d5e8d96fdaf1446ad30c19c37f8593
+      internalID: -836305205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 337
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7195fd1fa82f64284cdec3fbbab058
+      internalID: -2039324314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 342
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c52f06af7fc324bb578b91d72cc0a9
+      internalID: -2032977338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 190
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ba5e293bb8d6e498530634c7e121e5
+      internalID: -1887354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 187
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68a7e9bb6e8dcf44bd40dd14b530d67
+      internalID: -870329640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 187
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bc99880cb5f8345a9992bc1e8077fa
+      internalID: -323241582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 185
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab3e0c49e1c0ac418469b775980785f
+      internalID: -283938474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 186
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2736b9a110f0346b6bf85b0ac8add3
+      internalID: 453533388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 37
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5403af53b12a9943a575c5cb1292fc3
+      internalID: 2084098312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 37
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc171a93812da0468bb8f4ea406e2ec
+      internalID: -922561390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 33
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ab56514c90a1742bfd0719473538a6
+      internalID: -487385579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 34
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed57d3f675a75f45b6424f3f68b4108
+      internalID: 1443725379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water Vortex Splash-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 32
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bce2600714d51a4d801e3eab1c37f9d
+      internalID: -1898586952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Water Vortex Splash-Sheet_0: 1817035814
+      Water Vortex Splash-Sheet_1: 881505980
+      Water Vortex Splash-Sheet_10: -1675752744
+      Water Vortex Splash-Sheet_11: -1119664341
+      Water Vortex Splash-Sheet_12: -1069057195
+      Water Vortex Splash-Sheet_13: -223291038
+      Water Vortex Splash-Sheet_14: -397413636
+      Water Vortex Splash-Sheet_15: 613889411
+      Water Vortex Splash-Sheet_16: -1356276975
+      Water Vortex Splash-Sheet_17: -836305205
+      Water Vortex Splash-Sheet_18: -2039324314
+      Water Vortex Splash-Sheet_19: -2032977338
+      Water Vortex Splash-Sheet_2: -229330679
+      Water Vortex Splash-Sheet_20: -1887354
+      Water Vortex Splash-Sheet_21: -870329640
+      Water Vortex Splash-Sheet_22: -323241582
+      Water Vortex Splash-Sheet_23: -283938474
+      Water Vortex Splash-Sheet_24: 453533388
+      Water Vortex Splash-Sheet_25: 2084098312
+      Water Vortex Splash-Sheet_26: -922561390
+      Water Vortex Splash-Sheet_27: -487385579
+      Water Vortex Splash-Sheet_28: 1443725379
+      Water Vortex Splash-Sheet_29: -1898586952
+      Water Vortex Splash-Sheet_3: -97420487
+      Water Vortex Splash-Sheet_30: 1029275385
+      Water Vortex Splash-Sheet_4: -759185130
+      Water Vortex Splash-Sheet_5: -2124280624
+      Water Vortex Splash-Sheet_6: -507144328
+      Water Vortex Splash-Sheet_7: 2135348945
+      Water Vortex Splash-Sheet_8: 1805766098
+      Water Vortex Splash-Sheet_9: 1387865638
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

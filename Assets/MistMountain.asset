@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296de896492dc2541a00bcf34374c8b6, type: 3}
+  m_Name: MistMountain
+  m_EditorClassIdentifier: 
+  allNodes:
+  - nodeName: MistMountain_0
+    nodeID: 0
+    ObjectID: 0
+    worldPosition: {x: 0, y: 0, z: 0}
+    controlledByPlayer: 1
+    occupyingArmyID: -1
+    connectedNodeIDs: 01000000
+  - nodeName: MistMountain_0
+    nodeID: 1
+    ObjectID: 0
+    worldPosition: {x: 2.95, y: 4.31, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 0
+    connectedNodeIDs: 02000000
+  - nodeName: MistMountain_Boss
+    nodeID: 2
+    ObjectID: 0
+    worldPosition: {x: -2.77, y: 8.41, z: 0.2}
+    controlledByPlayer: 0
+    occupyingArmyID: 1
+    connectedNodeIDs: 
+  allArmies:
+  - name: 
+    armyID: 0
+    isPlayer: 0
+    currentNodeID: 1
+    lvl: 2
+    isDead: 0
+    exhaustedLvl: 0
+  - name: 
+    armyID: 1
+    isPlayer: 0
+    currentNodeID: 2
+    lvl: 3
+    isDead: 0
+    exhaustedLvl: 0
