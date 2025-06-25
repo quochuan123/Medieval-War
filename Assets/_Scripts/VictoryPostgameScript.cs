@@ -53,30 +53,35 @@ public class VictoryPostgameScript : MonoBehaviour
         int kdCurrXp = sts.kingdomLvlExp;
         int kdMaxXp = sts.kingdomLvlMaxExp;
 
-        cm.kdXPBar.fillAmount = (float)sts.kingdomLvlExp / sts.kingdomLvlMaxExp;
-        cm.kdLvlPostScrn.text = "Level "+sts.kingdomLvl.ToString();
-
-        cm.armyXPBar.fillAmount = (float)_army.xp / _army.maxXp;
-        cm.armyLvlPostScrn.text ="Level "+ _army.lvl.ToString();
-
-        if(_army.lvl < _army.lvlCap)
-        _army.GainXp(xpGainAmount);
+        if (sts.kingdomLvl >= sts.kingdomLvlCap)
+        {
+            cm.kdXPBar.fillAmount = 1;
+            cm.kdLvlPostScrn.text = "Max Level";
+        }
         else
         {
-            cm.armyXPBar.fillAmount = 1;
+            cm.kdXPBar.fillAmount = (float)sts.kingdomLvlExp / sts.kingdomLvlMaxExp;
+            cm.kdLvlPostScrn.text = "Level " + sts.kingdomLvl.ToString();
+            sts.GainXp(xpGainAmount);
         }
 
-        if(sts.kingdomLvl < 20)
-        sts.GainXp(xpGainAmount);
-        else
+        if (_army.lvl >= _army.lvlCap)
         {
             cm.armyXPBar.fillAmount = 1;
+            cm.armyLvlPostScrn.text = "Max Level";
         }
+        else
+        {
+            cm.armyXPBar.fillAmount = (float)_army.xp / _army.maxXp;
+            cm.armyLvlPostScrn.text = "Level " + _army.lvl.ToString();
+            _army.GainXp(xpGainAmount);
+        }
+
         while (armyXpGainAmount > 0 || kdXpGainAmount > 0)
         {
-            if (_army.lvl >= 20)
+            if (armyLvl >= _army.lvlCap)
                 armyXpGainAmount = 0;
-            if (sts.kingdomLvl >= 20)
+            if (kdLvl >= sts.kingdomLvlCap)
                 kdXpGainAmount = 0;
             if (armyXpGainAmount > 0)
             {
@@ -97,7 +102,7 @@ public class VictoryPostgameScript : MonoBehaviour
                 if (armyCurrXp >= armyMaxXp)
                 {
                     armyLvl++;
-                    cm.armyLvlPostScrn.text = "Level "+armyLvl.ToString();
+                    cm.armyLvlPostScrn.text = "Level " + armyLvl.ToString();
                     int xpLeftOver = armyCurrXp - armyMaxXp;
                     armyXpGainAmount += xpLeftOver;
                     armyCurrXp = 0;
@@ -145,6 +150,6 @@ public class VictoryPostgameScript : MonoBehaviour
     }
     public int KdMaxXPCal(int lvl)
     {
-        return  300 * (lvl * 2 + 1);
+        return 300 * (lvl * 2 + 1);
     }
 }

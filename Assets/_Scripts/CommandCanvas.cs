@@ -41,8 +41,7 @@ public class CommandCanvas : MonoBehaviour
             unit.GetComponent<Unit>().retreat = false;
             unit.GetComponent<Unit>().hold = false;
             unit.GetComponent<Unit>().dontBreakLineup = false;
-
-
+            unit.GetComponent<Unit>().target = null;
         }
     }
     public void NotBreakLineUpCommand()
@@ -63,6 +62,8 @@ public class CommandCanvas : MonoBehaviour
             unit.GetComponent<Unit>().retreat = false;
             unit.GetComponent<Unit>().hold = false;
             unit.GetComponent<Unit>().dontBreakLineup = true;
+            unit.GetComponent<Unit>().target = null;
+
         }
     }
 
@@ -83,7 +84,7 @@ public class CommandCanvas : MonoBehaviour
             unit.GetComponent<Unit>().retreat = false;
             unit.GetComponent<Unit>().hold = true;
             unit.GetComponent<Unit>().dontBreakLineup = false;
-
+            unit.GetComponent<Unit>().target = null;
 
         }
     }
@@ -105,6 +106,8 @@ public class CommandCanvas : MonoBehaviour
             unit.GetComponent<Unit>().retreat = true;
             unit.GetComponent<Unit>().hold = false;
             unit.GetComponent<Unit>().dontBreakLineup = false;
+            unit.GetComponent<Unit>().target = null;
+
 
         }
     }   
@@ -120,6 +123,7 @@ public class CommandCanvas : MonoBehaviour
             foreach (GameObject unit in gameManager.playerTeam)
             {
                 unit.GetComponent<Unit>().syncAttack = true;
+                unit.GetComponent<Unit>().target = null;
             }
         }
     }
@@ -135,6 +139,8 @@ public class CommandCanvas : MonoBehaviour
             foreach (GameObject unit in gameManager.playerTeam)
             {
                 unit.GetComponent<Unit>().syncAttack = false;
+                unit.GetComponent<Unit>().target = null;
+
             }
         }
         

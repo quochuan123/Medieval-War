@@ -63,86 +63,7 @@ public class Knight : Unit
     // Update is called once per frame
     void FixedUpdate()
     {
-        Collider2D enemyCollider = Physics2D.OverlapCircle(transform.position, rangeAttack, 1 << enemyLayer);
-
-
-        if (enemyCollider != null && currentState != State.dead && !retreat)
-        {
-
-            target = enemyCollider.gameObject;
-            currentState = State.attack;
-        }
-
-        enemyList = gameObject.layer == LayerMask.NameToLayer("Enemy") ? gameManager.playerTeam : gameManager.enemyTeam;
-        if (currentState != State.attack)
-        {
-            if ((target == null || !enemyList.Contains(target)) && !retreat && !dontBreakLineup)
-            {
-
-                if (enemyList.Count > 0)
-                {
-                    Process_FocusRange_FocusMelee();
-
-
-                }
-            }
-            else
-            {
-
-                if (dontBreakLineup)
-                {
-                    target = straightTarget;
-                }
-                if (retreat)
-                {
-                    target = commandPost;
-                }
-
-                if (!syncAttack)
-                {
-                    speed = baseSpeed;
-                    StopCoroutine(syncCoroutine);
-                    startSync = false;
-                }
-                else
-                {
-                    if (!startSync)
-                    {
-                        startSync = true;
-                        bonusSpeed = 0;
-                        var minSpeed = gameManager.playerTeam
-                        .Select(c => c.GetComponent<Unit>())
-                        .OrderBy(d => d.baseSpeed)
-                        .FirstOrDefault();
-
-                        if (minSpeed != null)
-                        {
-                            speed = minSpeed.baseSpeed;
-                            StartCoroutine(syncSpeedCountdown());
-                        }
-                        else
-                            speed = baseSpeed;
-
-                    }
-                }
-
-                Vector2 direction = (target.transform.position - transform.position).normalized;
-                if (currentState != State.dead || currentState != State.attack && currentState != State.getHit)
-                {
-                    rb.velocity = !hold ? direction * (speed + bonusSpeed) * disruptSlowAmount : Vector2.zero;
-                    velocityCheck = rb.velocity.magnitude;
-                    if (bonusSpeed < maxSpeed && !syncAttack && !hold)
-                    {
-                        if (!speedIncrease && currentState == State.run && !syncAttack)
-                        {
-                            speedIncrease = true;
-                            StartCoroutine(IncreaseSpeed());
-                        }
-                    }
-                }
-            }
-        }
-
+        KnightLogic();
         switch (currentState)
         {
             case State.idle:
@@ -154,7 +75,7 @@ public class Knight : Unit
                 Idle();
                 break;
             case State.attack:
-                rb.velocity = rb.velocity * 0.25f;
+                rb.velocity = Vector2.zero;
                 if (HP <= 0)
                 {
                     currentState = State.dead;
@@ -203,6 +124,11 @@ public class Knight : Unit
                 {
                     currentState = State.dead;
                 }
+
+                if (bonusSpeed < maxSpeed)
+                {
+                    currentState = State.run;
+                }
                 Run();
 
                 break;
@@ -240,6 +166,80 @@ public class Knight : Unit
             currentState = State.run;
         }
 
+    }
+
+    public void KnightLogic()
+    {
+        if (currentState != State.attack && currentState != State.dead)
+        {
+            if (!syncAttack)
+            {
+                speed = baseSpeed;
+                StopCoroutine(syncCoroutine);
+                startSync = false;
+            }
+            else
+            {
+                if (!startSync)
+                {
+                    startSync = true;
+                    bonusSpeed = 0;
+                    var minSpeed = gameManager.playerTeam
+                    .Select(c => c.GetComponent<Unit>())
+                    .OrderBy(d => d.baseSpeed)
+                    .FirstOrDefault();
+
+                    if (minSpeed != null)
+                    {
+                        speed = minSpeed.baseSpeed;
+                        StartCoroutine(syncSpeedCountdown());
+                    }
+                    else
+                        speed = baseSpeed;
+                }
+
+            }
+            enemyCollider = Physics2D.OverlapCircle(transform.position, rangeAttack, 1 << enemyLayer);
+            if (enemyCollider != null && currentState != State.dead && !retreat)
+            {
+                target = enemyCollider.gameObject;
+                currentState = State.attack;
+            }
+            else
+            {
+                if (retreat)
+                {
+                    target = commandPost;
+                }
+                else if (dontBreakLineup)
+                {
+                    target = straightTarget;
+                }
+                else
+                {
+                    enemyList = gameObject.layer == LayerMask.NameToLayer("Enemy") ? gameManager.playerTeam : gameManager.enemyTeam;
+                    if (target == null ||!enemyList.Contains(target)&& !retreat && !dontBreakLineup)
+                    {
+                        target = enemyList.Count > 0 ? Process_FocusRange_FocusMelee() : commandPost;
+                    }
+                }
+                Vector2 direction = (target.transform.position - transform.position).normalized;
+                if (currentState != State.dead || currentState != State.attack)
+                {
+                    rb.velocity = !hold ? direction * (speed + bonusSpeed) * disruptSlowAmount : Vector2.zero;
+                    velocityCheck = rb.velocity.magnitude;
+                    if (bonusSpeed < maxSpeed && !syncAttack && !hold)
+                    {
+                        if (!speedIncrease && currentState == State.run && !syncAttack)
+                        {
+                            speedIncrease = true;
+                            StartCoroutine(IncreaseSpeed());
+                        }
+                    }
+                }
+
+            }
+        }
     }
 
     public void Run()
@@ -284,6 +284,10 @@ public class Knight : Unit
     {
         currentState = State.idle;
         canAttack = false;
+        target = null;
+        attackSpellCollider = null;
+        playerCollider = null;
+        enemyCollider = null;
     }
 
 

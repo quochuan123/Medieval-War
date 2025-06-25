@@ -34,6 +34,27 @@ public class CampaignInterfaceManager : MonoBehaviour
         _rm.detailDesName.text = "First and easist campaign.";
         _rm.detailAmountName.text = "1 army";
         _rm.detailLvlRecName.text = "Level 1";
+
+        for(int i = 0; i < cpButtons.Count;i++)
+        {
+            switch (cpButtons[i].campaignName)
+            {
+                case "dawn_valley":
+                    cpButtons[i].gameObject.SetActive(_sts.isCompleteMistMountain);
+                    break;
+                case "strong_river":
+                    cpButtons[i].gameObject.SetActive(_sts.isCompleteDawnValley);
+                    break;
+                case "dead_kingdom":
+                    cpButtons[i].gameObject.SetActive(_sts.isCompleteStrongRiver);
+                    break;
+                case "skyfall":
+                    cpButtons[i].gameObject.SetActive(_sts.isCompleteSkyfall);
+                    break;
+            }
+        }
+    
+    
     }
 
 

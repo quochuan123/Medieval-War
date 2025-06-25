@@ -65,8 +65,18 @@ public class KingdomStatus : MonoBehaviour
             {
                 _as.armyName.text = sts.armies[i].name;
                 _as.armyLvl.text = "Level " + sts.armies[i].lvl.ToString();
-                _as.armyCurrXp.text = sts.armies[i].xp + "/" + sts.armies[i].maxXp;
-                _as.xpBar.fillAmount = (float)sts.armies[i].xp / sts.armies[i].maxXp;
+
+                if (sts.armies[i].lvl >= sts.armies[i].lvlCap)
+                {
+                    _as.armyCurrXp.text = "MAX";
+                    _as.xpBar.fillAmount = 1;
+                }
+                else
+                {
+                    _as.armyCurrXp.text = sts.armies[i].xp + "/" + sts.armies[i].maxXp;
+                    _as.xpBar.fillAmount = (float)sts.armies[i].xp / sts.armies[i].maxXp;
+                }
+                   
             }
         }
     }

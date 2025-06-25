@@ -15,6 +15,14 @@ public class MainMenuManager : MonoBehaviour
     public GameObject knightLineup;
    public GameObject knightLinedown;
     private SingletonScript sts;
+
+    //Setting 
+    public GameObject settingInterface;
+    public Image volumeBar;
+    public GameObject fullScreenOnBtn;
+    public GameObject fullScreenOffBtn;
+    public float volumeValue;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +37,14 @@ public class MainMenuManager : MonoBehaviour
         if(sm != null)
         {
             sm.MainMenuMusic();
+            volumeValue = sm.volumeValue;
+            sm.ChangeSoundVolume(sm.volumeValue);
+
         }
+
+        volumeBar.fillAmount = volumeValue;
+
+
     }
 
     public void NewGame()
@@ -49,6 +64,11 @@ public class MainMenuManager : MonoBehaviour
         sts.mageAmount = 10;
         sts.archmageAmount = 10;
         sts.crossbowAmount = 10;
+
+        sts.isCompleteMistMountain = false;
+        sts.isCompleteDawnValley = false;
+        sts.isCompleteDeadKingdom = false;
+        sts.isCompleteSkyfall = false;
 
         SceneManager.LoadScene("Village Map");
     }
@@ -75,6 +95,17 @@ public class MainMenuManager : MonoBehaviour
             sts.mageAmount = data._mageAmount;
             sts.archmageAmount = data._archmageAmount;
             sts.crossbowAmount = data._crossbowAmount;
+            sts.isCompleteMistMountain = data._isCompleteMistMountain;
+            sts.isCompleteDawnValley = data._isCompleteDawnValley;
+            sts.isCompleteDeadKingdom = data._isCompleteDeadKingdom;
+            sts.isCompleteSkyfall = data._isCompleteSkyfall;
+            SoundManager sm = FindObjectOfType<SoundManager>();
+            if (sm != null)
+            {
+                sm.volumeValue = data.volume;
+                sm.ChangeSoundVolume(sm.volumeValue);
+            }
+
             Debug.Log("Game loaded from JSON!");
             SceneManager.LoadScene("Village Map");
 
@@ -99,16 +130,61 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("Test Scene");
     }
 
-    public void Setting()
+    public void OpenSetting()
     {
+        settingInterface.SetActive(true);
+    }
 
+    public void CloseSetting()
+    {
+        settingInterface.SetActive(false);
     }
 
     public void ExitGame()
     {
         Application.Quit();
     }
-    
+
+    public void VolumeUp()
+    {
+        volumeValue += 0.2f;
+        if(volumeValue > 1)
+            volumeValue = 1;
+        volumeBar.fillAmount = volumeValue;
+        SoundManager sm = FindObjectOfType<SoundManager>();
+        if(sm != null)
+        {
+            sm.ChangeSoundVolume(volumeValue);
+        }
+    }
+
+    public void VolumeDown()
+    {
+        volumeValue -= 0.2f;
+        if (volumeValue < 0)
+            volumeValue = 0;
+        volumeBar.fillAmount = volumeValue;
+        SoundManager sm = FindObjectOfType<SoundManager>();
+        if (sm != null)
+        {
+            sm.ChangeSoundVolume(volumeValue);
+        }
+    }
+
+    public void FullScreenOn()
+    {
+        Screen.fullScreen = true;
+        fullScreenOffBtn.SetActive(true);
+        fullScreenOnBtn.SetActive(false);
+    }
+
+    public void FullScreenOff()
+    {
+        Screen.fullScreen = false;
+        fullScreenOffBtn.SetActive(false);
+        fullScreenOnBtn.SetActive(true);
+    }
+
 
 
 }

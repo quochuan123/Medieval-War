@@ -54,6 +54,8 @@ public class Unit : MonoBehaviour
     [SerializeField] protected GameObject straightTarget;
 
     [SerializeField] protected List<GameObject> enemyList;
+    [SerializeField] protected List<GameObject> friendList;
+
 
     [SerializeField] private GameObject dummy;
     public GameObject enhanceMagic;
@@ -129,11 +131,9 @@ public class Unit : MonoBehaviour
     protected Rigidbody2D rb;
     [SerializeField] protected SpriteRenderer spriteRenderer;
 
-    protected Collider2D enemyCollider;
-    protected Collider2D playerCollider;
-    protected Collider2D _playerCollider;
-
-    protected Collider2D attackSpellCollider;
+    [SerializeField] protected Collider2D enemyCollider;
+    [SerializeField] protected Collider2D playerCollider;
+    [SerializeField] protected Collider2D attackSpellCollider;
     // Start is called before the first frame update
     public virtual void Start()
     {
@@ -147,7 +147,7 @@ public class Unit : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
 
-        
+
 
         currentState = State.idle;
         if (gameObject.layer == LayerMask.NameToLayer("Player"))
@@ -162,14 +162,14 @@ public class Unit : MonoBehaviour
         }
 
         target = null;
-        if(unitClass == "halbert")
+        if (unitClass == "halbert")
         {
             firstShield = true;
         }
 
         //commandPost = GameObject.Find("Command Post");
-        
-        if(gameObject.layer == LayerMask.NameToLayer("Player"))
+
+        if (gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             exhaustValue = sts.playerData.exhaustedLvl;
         }
@@ -180,7 +180,7 @@ public class Unit : MonoBehaviour
         switch (inArmy)
         {
             case "main":
-                if(gameObject.layer == LayerMask.NameToLayer("Enemy"))
+                if (gameObject.layer == LayerMask.NameToLayer("Enemy"))
                 {
                     straightTarget = gameManager.p_mainforce[matchingNumber];
                 }
@@ -255,7 +255,7 @@ public class Unit : MonoBehaviour
         }
     }
 
-    
+
 
     public void Burned(float _burnDmg, float _burnDuration)
     {
@@ -290,7 +290,7 @@ public class Unit : MonoBehaviour
     {
         disruptDuration = 5f;
         disruptInterval = 1f;
-        
+
         if (!isDisrupt)
         {
             isDisrupt = true;
@@ -359,11 +359,11 @@ public class Unit : MonoBehaviour
         baseMagicDmg -= (currMagicDmg * exhaustValue);
         magicDmg = baseMagicDmg;
 
-       basePhyDmg -= (currPhyDmg * exhaustValue);
+        basePhyDmg -= (currPhyDmg * exhaustValue);
         phyDmg = basePhyDmg;
 
-       baseDefense -= (currDefense * exhaustValue);
-       defense = baseDefense;
+        baseDefense -= (currDefense * exhaustValue);
+        defense = baseDefense;
 
         baseResistance -= (currResistance * exhaustValue);
         resistance = baseResistance;
@@ -375,10 +375,10 @@ public class Unit : MonoBehaviour
     }
 
 
-    public void _LostHP(float magicDmgTaken, float physicDmgTaken, bool throughArmor,float echoeDmg)
+    public void _LostHP(float magicDmgTaken, float physicDmgTaken, bool throughArmor, float echoeDmg)
     {
         float baseDmgTaken = magicDmgTaken + physicDmgTaken;
-        
+
         if (unitClass == "shieldman")
         {
             physicDmgTaken = ShieldManUniqueSkillCal(65) ? physicDmgTaken * 0.25f : physicDmgTaken;
@@ -392,7 +392,7 @@ public class Unit : MonoBehaviour
         {
             physicDmgTaken = ShieldManUniqueSkillCal(25) ? physicDmgTaken * 0.3f : physicDmgTaken;
         }
-        float dmgTaken = physicDmgTaken*(1-(defense/(11+defense))) + magicDmgTaken*(1-(resistance/(11+resistance)));
+        float dmgTaken = physicDmgTaken * (1 - (defense / (11 + defense))) + magicDmgTaken * (1 - (resistance / (11 + resistance)));
         if (isDisrupt)
         {
             dmgTaken = dmgTaken * 1.25f;
@@ -411,7 +411,7 @@ public class Unit : MonoBehaviour
             firstShield = false;
             dmgTaken = 0f;
         }
-        HP -= (dmgTaken+echoeDmg);
+        HP -= (dmgTaken + echoeDmg);
         if (HP < 0)
         {
             HP = 0;
@@ -436,9 +436,9 @@ public class Unit : MonoBehaviour
 
     }
 
-    public void _Attack(GameObject _target, float _magDmg, float _phyDmg,float _echoeDmg)
+    public void _Attack(GameObject _target, float _magDmg, float _phyDmg, float _echoeDmg)
     {
-        _target.GetComponent<Unit>()._LostHP(_magDmg, _phyDmg,false,_echoeDmg);
+        _target.GetComponent<Unit>()._LostHP(_magDmg, _phyDmg, false, _echoeDmg);
     }
 
     public void ShieldBuff()
@@ -454,28 +454,28 @@ public class Unit : MonoBehaviour
         }
     }
 
-    public void Process_FocusRange_FocusMelee()
+    public GameObject Process_FocusRange_FocusMelee()
     {
         if (focusMelee)
         {
             var _target = enemyList
                 .FirstOrDefault(a => !a.GetComponent<Unit>().isRange);
-            target = _target != null ? _target : enemyList[Random.Range(0, enemyList.Count)];
+            return _target != null ? _target : enemyList[Random.Range(0, enemyList.Count)];
 
         }
         else if (focusRange)
         {
             var _target = enemyList
                 .FirstOrDefault(a => a.GetComponent<Unit>().isRange);
-            target = _target != null ? _target : enemyList[Random.Range(0, enemyList.Count)];
+            return _target != null ? _target : enemyList[Random.Range(0, enemyList.Count)];
         }
         else
         {
-            target = enemyList[Random.Range(0, enemyList.Count)];
+            return enemyList[Random.Range(0, enemyList.Count)];
         }
     }
 
-    
+
 
     public void DefenseCalculate()
     {
@@ -485,7 +485,7 @@ public class Unit : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
 
         if (collision.gameObject.layer == friendlyLayer)
         {
@@ -509,14 +509,14 @@ public class Unit : MonoBehaviour
                     StartCoroutine(IgnoreCountdow(myCollider, collision.collider));
                 }
             }
-            
+
         }
     }
 
     IEnumerator IgnoreCountdow(Collider2D thisCollider, Collider2D otherCollider)
     {
         yield return new WaitForSeconds(2f);
-        if(thisCollider != null && otherCollider != null)
+        if (thisCollider != null && otherCollider != null)
         {
             Physics2D.IgnoreCollision(thisCollider, otherCollider, false);
         }
@@ -528,7 +528,118 @@ public class Unit : MonoBehaviour
         startSync = false;
     }
 
+    public void FindEnhanceTarget(float range)
+    {
+        friendList = gameObject.layer == LayerMask.NameToLayer("Player") ? gameManager.playerTeam : gameManager.enemyTeam;
+        if (friendList.Count != 0 && enemyList.Count != 0)
+        {
+            GameObject unit = friendList[Random.Range(0, friendList.Count)];
+            if (Vector2.Distance(transform.position, unit.transform.position) > range || unit.GetComponent<Unit>().isEnhance)
+            {
+                playerCollider = null;
+            }
+            else
+            {
+                if (enhanceTarget == "none")
+                {
+                    playerCollider = unit.GetComponent<Collider2D>();
+                }
+                else if (unit.GetComponent<Unit>().unitClass != enhanceTarget)
+                {
+                    playerCollider = null;
+                }
+                else
+                {
+                    playerCollider = unit.GetComponent<Collider2D>();
+                }
+            }
+
+        }
+        else
+        {
+            playerCollider = null;
+        }
+    }
+
+    public bool CheckCurrentHp()
+    {
+        return HP / maxHP < 0.75f ? true : false;
+    }
+
+    public void FindHealTarget(float range)
+    {
+        friendList = gameObject.layer == LayerMask.NameToLayer("Player") ? gameManager.playerTeam : gameManager.enemyTeam;
+        if (friendList.Count != 0 && enemyList.Count != 0)
+        {
+            GameObject unit = friendList[Random.Range(0, friendList.Count)];
+            if (Vector2.Distance(transform.position, unit.transform.position) > range || !unit.GetComponent<Unit>().CheckCurrentHp())
+            {
+                playerCollider = null;
+            }
+            else
+            {
+                if (healTarget == "none")
+                {
+                    playerCollider = unit.GetComponent<Collider2D>();
+                }
+                else if (unit.GetComponent<Unit>().unitClass != healTarget)
+                {
+                    playerCollider = null;
+                }
+                else
+                {
+                    playerCollider = unit.GetComponent<Collider2D>();
+                }
+            }
+
+        }
+        else
+        {
+            playerCollider = null;
+        }
+    }
+
+    public void FindShieldTarget(float range)
+    {
+        friendList = gameObject.layer == LayerMask.NameToLayer("Player") ? gameManager.playerTeam : gameManager.enemyTeam;
+        if (friendList.Count != 0 && enemyList.Count != 0)
+        {
+            GameObject unit = friendList[Random.Range(0, friendList.Count)];
+            if (Vector2.Distance(transform.position, unit.transform.position) > range || unit.GetComponent<Unit>().isShielded)
+            {
+                playerCollider = null;
+            }
+            else
+            {
+                if (endureTarget == "none")
+                {
+                    playerCollider = unit.GetComponent<Collider2D>();
+                }
+                else if (unit.GetComponent<Unit>().unitClass != endureTarget)
+                {
+                    playerCollider = null;
+                }
+                else
+                {
+                    playerCollider = unit.GetComponent<Collider2D>();
+                }
+            }
+
+        }
+        else
+        {
+            playerCollider = null;
+        }
+    }
+
+
+
 
 }
+
+
+
+
+
 
 

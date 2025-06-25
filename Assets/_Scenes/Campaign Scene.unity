@@ -4643,6 +4643,11 @@ MonoBehaviour:
   mapState: {fileID: 0}
   isStartStrategy: 0
   controllersList: []
+  isCompleteMistMountain: 0
+  isCompleteDawnValley: 0
+  isCompleteStrongRiver: 0
+  isCompleteDeadKingdom: 0
+  isCompleteSkyfall: 0
 --- !u!4 &751613641
 Transform:
   m_ObjectHideFlags: 0
@@ -9577,7 +9582,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 8
+    OrthographicSize: 10
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -9922,7 +9927,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -45680,18 +45685,18 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 22.240328, y: 19.77044}
-      - {x: 0.87854385, y: 19.998943}
+    - - {x: 25.215403, y: 20.151854}
+      - {x: 1.4125309, y: 20.151512}
       - {x: -21.074596, y: 19.981768}
-      - {x: -21.336529, y: 15.913052}
-      - {x: -21.196085, y: -5.6362267}
-      - {x: -20.83638, y: -9.528101}
-      - {x: 18.905169, y: -9.312378}
-      - {x: 22.22099, y: -9.116421}
-      - {x: 22.36453, y: 3.751359}
-      - {x: 21.961761, y: 10.708288}
-      - {x: 21.967817, y: 15.826663}
-      - {x: 22.15644, y: 18.181396}
+      - {x: -27.419634, y: 19.857042}
+      - {x: -27.279188, y: -5.903616}
+      - {x: -26.931772, y: -16.62037}
+      - {x: 15.830187, y: -15.729718}
+      - {x: 25.781185, y: -15.161777}
+      - {x: 25.11075, y: -1.2833762}
+      - {x: 24.936842, y: 7.0466623}
+      - {x: 25.135447, y: 12.271357}
+      - {x: 25.131506, y: 17.494839}
   m_UseDelaunayMesh: 0
 --- !u!1 &1776316799
 GameObject:

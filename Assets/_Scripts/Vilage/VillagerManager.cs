@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.Rendering;
 
 public class VillagerManager : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class VillagerManager : MonoBehaviour
     public bool isTalkWithSoldier;
     public bool isTalkWithHunter;
 
+    
+
 
 
 
@@ -25,12 +28,14 @@ public class VillagerManager : MonoBehaviour
     private SingletonScript sts;
     private VillagerResourcesManager rm;
     private PrinceController player;
+    private CampaignInterfaceManager cim;
     // Start is called before the first frame update
     void Start()
     {
         sts = FindObjectOfType<SingletonScript>();
         rm = FindObjectOfType<VillagerResourcesManager>();
         player = FindObjectOfType<PrinceController>();
+        cim = FindObjectOfType<CampaignInterfaceManager>(true);
 
 
         rm.voluteers.text = sts.volunteers.ToString();
@@ -40,9 +45,19 @@ public class VillagerManager : MonoBehaviour
 
         sts.KingdomMaxExpCalculate();
         sts.CapCalculate();
+        sts.CheckCompleteCampaign();
 
-        rm.kdXPbar.fillAmount = (float)sts.kingdomLvlExp / sts.kingdomLvlMaxExp;
-        rm.kdLvl.text = "Level " + sts.kingdomLvl.ToString();
+        if (sts.kingdomLvl >= sts.kingdomLvlCap)
+        {
+            rm.kdXPbar.fillAmount = 1;
+            rm.kdLvl.text = "Level " + sts.kingdomLvl.ToString()+" (MAX)";
+        }
+        else
+        {
+            rm.kdXPbar.fillAmount = (float)sts.kingdomLvlExp / sts.kingdomLvlMaxExp;
+            rm.kdLvl.text = "Level " + sts.kingdomLvl.ToString();
+        }    
+            
 
 
         SoundManager sm = FindObjectOfType<SoundManager>();
@@ -51,10 +66,13 @@ public class VillagerManager : MonoBehaviour
             sm.VillagerMusic();
         }
 
+
     }
 
+    
+
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
 
 
@@ -299,6 +317,13 @@ public class VillagerManager : MonoBehaviour
             _mageAmount = sts.mageAmount,
             _archmageAmount = sts.archmageAmount,
             _crossbowAmount = sts.crossbowAmount,
+            _isCompleteMistMountain = sts.isCompleteMistMountain,
+            _isCompleteDawnValley = sts.isCompleteDawnValley,
+            _isCompleteStrongRiver = sts.isCompleteStrongRiver,
+            _isCompleteDeadKingdom = sts.isCompleteDeadKingdom,
+            _isCompleteSkyfall = sts.isCompleteSkyfall,
+            volume = FindObjectOfType<SoundManager>() != null ? FindObjectOfType<SoundManager>().volumeValue : 1
+
         };
 
         string json = JsonUtility.ToJson(data, true);
@@ -331,6 +356,17 @@ public class VillagerManager : MonoBehaviour
             sts.mageAmount = data._mageAmount;
             sts.archmageAmount = data._archmageAmount;
             sts.crossbowAmount = data._crossbowAmount;
+            sts.isCompleteMistMountain = data._isCompleteMistMountain;
+            sts.isCompleteDawnValley = data._isCompleteDawnValley;
+            sts.isCompleteDeadKingdom = data._isCompleteDeadKingdom;
+            sts.isCompleteSkyfall = data._isCompleteSkyfall;
+            SoundManager sm = FindObjectOfType<SoundManager>();
+            if(sm != null)
+            {
+                sm.volumeValue = data.volume;
+                sm.ChangeSoundVolume(sm.volumeValue);
+            }
+
             Debug.Log("Game loaded from JSON!");
             SceneManager.LoadScene("Village Map");
 

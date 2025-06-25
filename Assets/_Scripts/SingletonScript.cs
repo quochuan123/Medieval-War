@@ -64,8 +64,75 @@ public class SingletonScript : MonoBehaviour
 
     public static SingletonScript Instance;
     private VillagerManager vm;
-    //Savedata varibles
+
+    public bool isCompleteMistMountain;
+    public bool isCompleteDawnValley;
+    public bool isCompleteStrongRiver;
+    public bool isCompleteDeadKingdom;
+    public bool isCompleteSkyfall;
     
+
+    public void CheckCompleteCampaign()
+    {
+        kingdomLvlCap = 5;
+        foreach (var army in armies)
+        {
+            army.lvlCap = 5;
+        }
+
+        if (isCompleteMistMountain)
+        {
+            kingdomLvlCap = 10;
+
+            foreach(var army in armies)
+            {
+                army.lvlCap = 10;
+            }
+        }
+
+        if (isCompleteDawnValley)
+        {
+            kingdomLvlCap = 15;
+
+            foreach (var army in armies)
+            {
+                army.lvlCap = 15;
+            }
+        }
+
+        if (isCompleteStrongRiver)
+        {
+            kingdomLvlCap = 20;
+
+            foreach (var army in armies)
+            {
+                army.lvlCap = 20;
+            }
+        }
+
+        if (isCompleteDeadKingdom)
+        {
+            kingdomLvlCap = 25;
+
+            foreach (var army in armies)
+            {
+                army.lvlCap = 25;
+            }
+        }
+
+        if (isCompleteSkyfall)
+        {
+            kingdomLvlCap = 26;
+
+            foreach (var army in armies)
+            {
+                army.lvlCap = 26;
+            }
+        }
+
+
+    }
+
     void Start()
     {
         vm = FindObjectOfType<VillagerManager>();
@@ -76,9 +143,9 @@ public class SingletonScript : MonoBehaviour
 
         KingdomMaxExpCalculate();
     }
-    
 
-    
+
+
 
 
     private void Awake()
@@ -95,7 +162,7 @@ public class SingletonScript : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    
+
 
     public void CapCalculate()
     {
@@ -133,7 +200,7 @@ public class SingletonScript : MonoBehaviour
     {
         while (xpSource > 0)
         {
-            if (kingdomLvl >= 20) break;
+            if (kingdomLvl >= kingdomLvlCap) break;
             int xpNeeded = kingdomLvlMaxExp - kingdomLvlExp;
 
             if (xpSource >= xpNeeded)
@@ -180,7 +247,7 @@ public class ArmyInfor
     {
         while (xpSource > 0)
         {
-            if (lvl >= 20) break;
+            if (lvl >= lvlCap) break;
             int xpNeeded = maxXp - xp;
 
             if (xpSource >= xpNeeded)
@@ -240,4 +307,18 @@ public class SaveLoadManager
     public int _archmageAmount;
 
     public int _crossbowAmount;
+
+    public bool _isCompleteMistMountain;
+
+    public bool _isCompleteDawnValley;
+
+    public bool _isCompleteStrongRiver;
+
+    public bool _isCompleteDeadKingdom;
+
+    public bool _isCompleteSkyfall;
+
+    public float volume;
+
+
 }

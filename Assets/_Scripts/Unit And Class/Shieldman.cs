@@ -26,6 +26,7 @@ public class Shieldman : Unit
     {
         base.Start();
         rangeAttack = 0.2f;
+        shieldRange = 2f;
         baseSpeed = 0.1f;
         speed = baseSpeed;
         maxHP = Random.Range(575,610);
@@ -71,97 +72,7 @@ public class Shieldman : Unit
     // Update is called once per frame
     void FixedUpdate()
     {
-        enemyCollider = Physics2D.OverlapCircle(transform.position, rangeAttack, 1 << enemyLayer);
-
-        if (!createShield)
-        {
-            playerCollider = Physics2D.OverlapCircle(transform.position, teamRange, 1 << friendlyLayer);
-
-            if (playerCollider != null && playerCollider.GetComponent<Unit>().isShielded)
-            {
-                playerCollider = null;
-            }
-            else
-            {
-                if (endureTarget == "none")
-                {
-
-                }
-                else if (playerCollider.GetComponent<Unit>().unitClass != endureTarget)
-                {
-                    playerCollider = null;
-                }
-            }
-        }
-        else
-        {
-            playerCollider = null;
-        }
-
-        if ((enemyCollider != null || playerCollider != null) && currentState != State.dead && currentState != State.attack)
-        {
-            if(enemyCollider != null)
-                target = enemyCollider.gameObject;
-            if (playerCollider != null)
-                target = playerCollider.gameObject;
-            currentState = State.attack;
-        }
-
-
-        enemyList = gameObject.layer == LayerMask.NameToLayer("Enemy") ? gameManager.playerTeam : gameManager.enemyTeam;
-        if(currentState != State.attack)
-        {
-            if ((target == null || !enemyList.Contains(target)) && !retreat && !dontBreakLineup)
-            {
-
-                Process_FocusRange_FocusMelee();
-
-            }
-            else
-            {
-
-                if (dontBreakLineup)
-                {
-                    target = straightTarget;
-                }
-                if (retreat)
-                {
-                    target = commandPost;
-                }
-
-                if (!syncAttack)
-                {
-                    speed = baseSpeed;
-                    StopCoroutine(syncCoroutine);
-                    startSync = false;
-                }
-                else
-                {
-                    if (!startSync)
-                    {
-                        startSync = true;
-                        var minSpeed = gameManager.playerTeam
-                        .Select(c => c.GetComponent<Unit>())
-                        .OrderBy(d => d.baseSpeed)
-                        .FirstOrDefault();
-
-                        if (minSpeed != null)
-                        {
-                            speed = minSpeed.baseSpeed;
-                            StartCoroutine(syncSpeedCountdown());
-                        }
-                        else
-                            speed = baseSpeed;
-                    }
-                }
-
-                Vector2 direction = (target.transform.position - transform.position).normalized;
-                if (currentState != State.dead || currentState != State.attack)
-                {
-                    rb.velocity = !hold ? direction * speed * disruptSlowAmount : Vector2.zero;
-                }
-            }
-        }
+        ShieldLogic();
         
         switch (currentState)
         {
@@ -170,6 +81,7 @@ public class Shieldman : Unit
                 if (HP <= 0)
                 {
                     currentState = State.dead;
+                    break;
                 }
                 Idle();
                 break;
@@ -205,7 +117,7 @@ public class Shieldman : Unit
                             createShield = true;
                             animator.Play("Shieldman Defend");
                             CreateShieldToAUnit(playerCollider.GetComponent<Unit>());
-                            StartCoroutine(ShieldCountdown());
+                            //StartCoroutine(ShieldCountdown());
                         }
                            
                     }
@@ -237,6 +149,82 @@ public class Shieldman : Unit
                 break;
             default:
                 break;
+        }
+    }
+
+    public void ShieldLogic()
+    {
+        if (currentState != State.attack && currentState != State.dead)
+        {
+            if (!syncAttack)
+            {
+                speed = baseSpeed;
+                StopCoroutine(syncCoroutine);
+                startSync = false;
+            }
+            else
+            {
+                if (!startSync)
+                {
+                    startSync = true;
+                    var minSpeed = gameManager.playerTeam
+                    .Select(c => c.GetComponent<Unit>())
+                    .OrderBy(d => d.baseSpeed)
+                    .FirstOrDefault();
+
+                    if (minSpeed != null)
+                    {
+                        speed = minSpeed.baseSpeed;
+                        StartCoroutine(syncSpeedCountdown());
+                    }
+                    else
+                        speed = baseSpeed;
+                }
+
+            }
+            enemyCollider = Physics2D.OverlapCircle(transform.position, rangeAttack, 1 << enemyLayer);
+
+            
+
+            if (!createShield)
+            {
+                FindShieldTarget(shieldRange);
+            }
+
+            if ((enemyCollider != null || playerCollider != null) && currentState != State.dead && !retreat)
+            {
+                if (enemyCollider != null)
+                    target = enemyCollider.gameObject;
+                
+                if (playerCollider != null)
+                    target = playerCollider.gameObject;
+                currentState = State.attack;
+            }
+            else
+            {
+                if (retreat)
+                {
+                    target = commandPost;
+                }
+                else if (dontBreakLineup)
+                {
+                    target = straightTarget;
+                }
+                else
+                {
+                    enemyList = gameObject.layer == LayerMask.NameToLayer("Enemy") ? gameManager.playerTeam : gameManager.enemyTeam;
+                    if (target == null || !enemyList.Contains(target) && !retreat && !dontBreakLineup)
+                    {
+                        target = enemyList.Count > 0 ? Process_FocusRange_FocusMelee() : commandPost;
+                    }
+                }
+                Vector2 direction = (target.transform.position - transform.position).normalized;
+                if (currentState != State.dead || currentState != State.attack)
+                {
+                    rb.velocity = !hold ? direction * speed * disruptSlowAmount : Vector2.zero;
+                    velocityCheck = rb.velocity.magnitude;
+                }
+            }
         }
     }
     public void CreateShieldToAUnit(Unit unit)
@@ -276,11 +264,7 @@ public class Shieldman : Unit
         }
     }
 
-    IEnumerator ShieldCountdown()
-    {
-        yield return new WaitForSeconds(30f);
-        createShield = false;
-    }
+    
    
 
     public void Dead()
@@ -293,6 +277,10 @@ public class Shieldman : Unit
     {
         currentState = State.idle;
         canAttack = false;
+        target = null;
+        attackSpellCollider = null;
+        playerCollider = null;
+        enemyCollider = null;
     }
 
 

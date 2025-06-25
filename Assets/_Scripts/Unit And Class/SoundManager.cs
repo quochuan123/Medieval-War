@@ -10,6 +10,8 @@ public class SoundManager : MonoBehaviour
     public AudioSource buttonSound;
     public AudioSource interfaceMusic;
 
+    public float volumeValue;
+
     [Space(30)]
 
     public AudioClip mainMenuClip;
@@ -23,7 +25,7 @@ public class SoundManager : MonoBehaviour
 
     public void Awake()
     {
-
+        volumeValue = 1;
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -33,6 +35,14 @@ public class SoundManager : MonoBehaviour
         // Gán instance và giữ lại khi chuyển scene
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void ChangeSoundVolume(float x)
+    {
+        volumeValue = x;
+        backgroundMusic.volume = volumeValue;
+        buttonSound.volume = volumeValue;
+        interfaceMusic.volume = volumeValue;
     }
 
     public void MainMenuMusic()

@@ -276,6 +276,7 @@ public class GameManager : MonoBehaviour
                 if (isWin)
                 {
                     SceneManager.LoadScene("Village Map");
+                    sts.isCompleteMistMountain = true;
                     sts.isStartStrategy = false;
                 }
                 else
@@ -298,6 +299,7 @@ public class GameManager : MonoBehaviour
                 if (isWin)
                 {
                     SceneManager.LoadScene("Village Map");
+                    sts.isCompleteDawnValley = true;
                     sts.isStartStrategy = false;
                 }
                 else
@@ -326,6 +328,7 @@ public class GameManager : MonoBehaviour
                 if (isWin)
                 {
                     SceneManager.LoadScene("Village Map");
+                    sts.isCompleteStrongRiver = true;
                     sts.isStartStrategy = false;
                 }
                 else
@@ -358,6 +361,7 @@ public class GameManager : MonoBehaviour
                 if (isWin)
                 {
                     SceneManager.LoadScene("Village Map");
+                    sts.isCompleteDeadKingdom = true;
                     sts.isStartStrategy = false;
                 }
                 else
@@ -382,6 +386,7 @@ public class GameManager : MonoBehaviour
                 if (isWin)
                 {
                     SceneManager.LoadScene("Village Map");
+                    sts.isCompleteSkyfall = true;
                     sts.isStartStrategy = false;
                 }
                 else
